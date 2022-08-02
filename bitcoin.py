@@ -1,18 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[11]:
-
-
-get_ipython().system('pip install selenium')
-
-
-# In[12]:
-
-
-get_ipython().system('pip install chromedriver-binary==103.0.5060.134')
-
-
 # In[13]:
 
 
@@ -59,16 +47,4 @@ payload = {
 res = requests.post( WEBHOOK_URL, json=payload )
 print( res.status_code )
 print( json.dumps( json.loads(res.content), indent=4, ensure_ascii=False ) )
-
-
-# In[21]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
